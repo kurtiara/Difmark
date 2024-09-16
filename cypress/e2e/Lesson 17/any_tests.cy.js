@@ -1,6 +1,11 @@
 describe("Preliminary test suite", () => {
   beforeEach(() => {
-    cy.visit("");
+    cy.visit("https://qauto.forstudy.space", {
+      auth: {
+        username: "guest",
+        password: "welcome2qauto",
+      },
+    });
   });
 
   it("Search Check", () => {
